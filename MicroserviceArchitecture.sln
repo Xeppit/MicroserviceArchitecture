@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.IdentityServer", "MicroserviceArchitecture.IdentityServer\MicroserviceArchitecture.IdentityServer.csproj", "{D628C6E9-5D40-455C-8C78-84D7293EBE5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.IdentityServer", "MicroserviceArchitecture.IdentityServer\MicroserviceArchitecture.IdentityServer.csproj", "{D628C6E9-5D40-455C-8C78-84D7293EBE5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.Blazor", "MicroserviceArchitecture.Blazor\MicroserviceArchitecture.Blazor.csproj", "{F0E7E092-55D5-44C5-ADCA-BACF044E4E80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.Blazor", "MicroserviceArchitecture.Blazor\MicroserviceArchitecture.Blazor.csproj", "{F0E7E092-55D5-44C5-ADCA-BACF044E4E80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.GatewayApi", "MicroserviceArchitecture.GatewayApi\MicroserviceArchitecture.GatewayApi.csproj", "{5A14A1EF-3932-435F-A6A8-BB67B208B198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.GatewayApi", "MicroserviceArchitecture.GatewayApi\MicroserviceArchitecture.GatewayApi.csproj", "{5A14A1EF-3932-435F-A6A8-BB67B208B198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.MicroServiceApi1", "MicroserviceArchitecture.MicroServiceApi1\MicroserviceArchitecture.MicroServiceApi1.csproj", "{36335814-21DC-48CD-98C1-C9D95AD64E3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.MicroServiceApi1", "MicroserviceArchitecture.MicroServiceApi1\MicroserviceArchitecture.MicroServiceApi1.csproj", "{36335814-21DC-48CD-98C1-C9D95AD64E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.MicroServiceApi2", "MicroserviceArchitecture.MicroServiceApi2\MicroserviceArchitecture.MicroServiceApi2.csproj", "{60E29BB8-AC3F-478B-B137-0AB8010D77BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.MicroServiceApi2", "MicroserviceArchitecture.MicroServiceApi2\MicroserviceArchitecture.MicroServiceApi2.csproj", "{60E29BB8-AC3F-478B-B137-0AB8010D77BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.MicroServiceApi3", "MicroserviceArchitecture.MicroServiceApi3\MicroserviceArchitecture.MicroServiceApi3.csproj", "{70DA9125-8FC6-4376-99DF-8309155B355F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.MicroServiceApi3", "MicroserviceArchitecture.MicroServiceApi3\MicroserviceArchitecture.MicroServiceApi3.csproj", "{70DA9125-8FC6-4376-99DF-8309155B355F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D628C6E9-5D40-455C-8C78-84D7293EBE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -100,5 +97,11 @@ Global
 		{70DA9125-8FC6-4376-99DF-8309155B355F}.Release|x64.Build.0 = Release|Any CPU
 		{70DA9125-8FC6-4376-99DF-8309155B355F}.Release|x86.ActiveCfg = Release|Any CPU
 		{70DA9125-8FC6-4376-99DF-8309155B355F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6B33FB6-C1A0-4B90-939A-789643F35879}
 	EndGlobalSection
 EndGlobal

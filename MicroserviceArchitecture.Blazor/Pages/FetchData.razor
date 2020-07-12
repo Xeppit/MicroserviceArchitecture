@@ -1,9 +1,17 @@
 @page "/fetchdata"
+@using Microsoft.AspNetCore.Authorization
 @inject HttpClient Http
+@attribute [Authorize]                                                          //New Line
 
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        You can only see this if you're an admin or superuser.
+    </Authorized>                                                              
+</AuthorizeView>
 
 @if (forecasts == null)
 {
@@ -39,7 +47,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("https://localhost:5002/WeatherForecast");
     }
 
     public class WeatherForecast
@@ -50,6 +58,6 @@ else
 
         public string Summary { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        public int TemperatureF { get; set; }// Modified Line
     }
 }
