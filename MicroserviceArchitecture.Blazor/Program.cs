@@ -31,8 +31,8 @@ namespace MicroserviceArchitecture.Blazor
                 {                                                               // New Line
                     var handler = sp.GetService<AuthorizationMessageHandler>()  // New Line
                         .ConfigureHandler(                                      // New Line
-                            authorizedUrls: new[] { "https://localhost:5004" }, // New Line
-                            scopes: new[] { "testapi" });                       // New Line
+                            authorizedUrls: new[] { "https://localhost:5002" }, // New Line
+                            scopes: new[] { "gatewayapi" });                       // New Line
                     return handler;                                             // New Line
                 });                                                             // New Line
 
