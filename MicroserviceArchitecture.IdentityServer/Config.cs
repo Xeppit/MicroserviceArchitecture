@@ -43,6 +43,17 @@ namespace MicroserviceArchitecture.IdentityServer
                     PostLogoutRedirectUris = {"https://localhost:5001/"},
                     AllowedScopes = {"openid", "profile", "email", "gatewayapi"}
                 },
+                // Add New Client
+                new Client
+                {
+                    ClientId = "gateway",
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedScopes = {"microserviceapi1", "microserviceapi2", "microserviceapi3",}
+                }
             };
     }
 }
